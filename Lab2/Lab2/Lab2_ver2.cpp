@@ -40,6 +40,12 @@ namespace lab2_ver2
 					out << std::setfill(' ') << std::setw(11) << std::right << std::dec << num_int;
 					out << std::setfill(' ') << std::setw(10) << std::right << std::hex << num_int << endl;
 				}				
+				else
+				{
+					out << std::setfill(' ') << '-' << std::setw(10) << std::right << std::oct << abs(num_int);
+					out << std::setfill(' ') <<' ' << '-' << std::setw(9) << std::right << std::dec << abs(num_int);
+					out << std::setfill(' ') <<' '<< '-' << std::setw(8) << std::right << std::hex << abs(num_int) << endl;
+				}
 			}
 		}
 		in.clear();	//파일 초기화 부분
